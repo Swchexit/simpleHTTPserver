@@ -13,9 +13,9 @@ import urllib.parse
 # Wei
 HOST = os.getenv("ADDR")
 HTTP_PORT = int(os.getenv("HTTP_PORT"))
-# HTTP_PORT = 9487
+HTTP_PORT = 9487
 HTTPS_PORT = 8787
-USE_HTTPS = False
+USE_HTTPS = True
 
 # Wen
 users_lock = threading.Lock()
@@ -408,12 +408,11 @@ if __name__ == "__main__":
     server_http.start()
     server_http.join()
 
-    """
     input("Press enter to stop server...")
     server_https.close()
     server_http.close()
     print("Program complete")
-    """
+
 """
 For HTTP packets larger than buffer, use this instead:
 
@@ -426,3 +425,4 @@ while True:
         break
     chunks.append(data)
 """
+
