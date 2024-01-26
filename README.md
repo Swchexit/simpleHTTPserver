@@ -3,6 +3,8 @@
 ### Feature:
 This web server is a simple bulletin which you can sign in and leave comments. 
 
+In this buletin, you can also play video through online streaming.
+
 ### Why its special
 This server does not rely on any HTTP client packages, but manually parse HTTP packets. It's capable of managing multiple HTTP connections while utilizing self-signed TLS to upgrade unsafe http connection to https. It also offer an unsafe http website, but it will try to upgrade the connection if possible.
 
